@@ -1,4 +1,4 @@
-let timelineData = [
+[
     {
         text: 'Religious Reformers',
         year: '1703-1840',
@@ -113,14 +113,3 @@ let timelineData = [
         }
     }
 ]
-
-timelineData = timelineData.sort((a, b) => {
-    if (a.year < b.year) {
-        return -1;
-    }
-    if (new Date(a.year + a.date) < new Date(b.year + b.date)) {
-        return -1;
-    }
-    });
-
-export default timelineData
